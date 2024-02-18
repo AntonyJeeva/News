@@ -19,9 +19,17 @@ function Main(props) {
 
     <div className='main-board'>
 
-    {newsArticles.map((news, index)=> {
+    {/* {newsArticles.map((news, index)=> {
       return <NewsItem key={index}  news ={news}/>
-    })}
+    })} */}
+
+    {newsArticles ? (
+  newsArticles.map((news, index) => {
+    return <NewsItem key={index} news={news} />;
+  })
+) : (
+  <div>Loading...</div>
+)}
     
     </div>
   )
