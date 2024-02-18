@@ -6,12 +6,13 @@ import Main from './Components/Main'
 
 function App() {
   
+  const [newsCategory, setNewsCategory] = useState("general")
 
   return (
     <>
    
-     <NavBar />
-     <Main />
+     <NavBar setNewsCategory={setNewsCategory} />
+     <Main newsCategory={newsCategory} />
     </>
   )
 }
