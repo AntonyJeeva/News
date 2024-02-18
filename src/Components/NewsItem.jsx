@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+// import React from 'react'
 import image from '../assets/sample_news.jpg'
 
 function NewsItem(props) {
@@ -9,6 +10,7 @@ function NewsItem(props) {
     // <div className='news-item'>
 
 <div className="card bg-warning-subtle mb-3 d-inline-block px-2 py-2 my-2 mx-2" style={{width: "18rem"}} >
+  {/* // eslint-disable-next-line react/prop-types */}
   <img src= {props.news.urlToImage ? props.news.urlToImage : image} className="card-img-top" alt="broken image"  style={{height : "200px" , width: "100%"}} />
   <div className="card-body">
     <h5 className="card-title">{props.news.title }</h5>

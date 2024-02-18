@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+// import React from 'react'
 import { useEffect, useState } from 'react'
 import NewsItem from './NewsItem'
 
